@@ -9,6 +9,8 @@ on:
   pull_request:
     branches:
       - main
+  workflow_dispatch:
+  
 
 jobs:
   build:
@@ -67,3 +69,4 @@ jobs:
           docker run -d -p 8080:8080 my-app:latest
 
       - run: echo "Docker deployment completed!"
+
